@@ -40,7 +40,7 @@ Choose between new user registration and existing user recognition.
 ![proceed_confirmation](https://github.com/user-attachments/assets/cdb16ec9-f352-4e61-a950-1d312801b3da)
 
 
-#### On proceeding with recognition: Initially Active mode
+#### Recognition starts
 ![main_recognition_window](https://github.com/user-attachments/assets/98d95088-9b11-4965-9f9b-7ea03a70691f)
 
 
@@ -52,8 +52,7 @@ Choose between new user registration and existing user recognition.
 ![details_window](https://github.com/user-attachments/assets/1a5d6445-3f0f-4d08-9139-d4e8709a14ee)
 
 ## Existing User Recognition
-If the user selects the "Existing User" option, the workflow bypasses the registration steps and starts directly from the [recognition process](https://github.com/Parekh03/Face-Recognition_System/edit/main/README.md#on-proceeding-with-recognition-initially-active-mode)
-
+If the user selects the "Existing User" option, the workflow bypasses the registration steps and starts directly from the [recognition process](#recognition-starts)
 
 ## Testing
 The software has been tested on a diverse group of individuals under various conditions, demonstrating high accuracy and reliability in face recognition. Some of the results are as follows:
