@@ -51,8 +51,8 @@ Choose between new user registration and existing user recognition.
 #### After a few seconds:
 ![details_window](https://github.com/user-attachments/assets/1a5d6445-3f0f-4d08-9139-d4e8709a14ee)
 
-
-
+## Existing User Recognition
+If the user selects the "Existing User" option, the workflow bypasses the registration steps and starts directly from the [recognition process](https://github.com/Parekh03/Face-Recognition_System/edit/main/README.md#on-proceeding-with-recognition-initially-active-mode)
 
 
 ## Testing
@@ -65,6 +65,15 @@ The software has been tested on a diverse group of individuals under various con
 ![pratush](https://github.com/user-attachments/assets/319be0ec-e379-4285-9686-038e1b4f600e)
 
 ![sawan](https://github.com/user-attachments/assets/0c2b910b-776a-45f6-9d74-12d6eaa8ce19)
+
+
+## Notes
+1.	Due to poor network connectivity, the second window displaying “Marked. Loading your data” might not appear. Instead, the final details window might be shown directly.
+
+2.	If the face is not recognized during the real-time live video, pressing ‘r’ multiple times will have no effect. It is recommended to use the system in a well-lit area where the face is visible to the camera.
+
+3.	Poor network connectivity or data deletion from the database can result in data not being displayed in the final window. In such cases, the following will be observed:
+
 
 
 
