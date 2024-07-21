@@ -66,6 +66,51 @@ The software has been tested on a diverse group of individuals under various con
 ![sawan](https://github.com/user-attachments/assets/0c2b910b-776a-45f6-9d74-12d6eaa8ce19)
 
 
+## Implementation
+The project primarily leverages the [face_recognition](https://github.com/ageitgey/face_recognition) library, which provides a state-of-the-art model for recognizing faces in a frame and obtaining their encodings. This model boasts an impressive accuracy of 99.38%, making it highly reliable for face recognition tasks. 
+
+### Working of face_recognition library
+The face_recognition library operates through a series of sophisticated steps:
+1. Encoding a Picture Using the HOG Algorithm
+2. Face Landmark Detection and Pose Estimation
+3. Feature Extraction using Neural Network
+4. Face Comparison and Matching
+
+### Additional Libraries and Frameworks
+Along with face_recognition library, the project uses several other python libraries and frameworks like:
+1. **Tkinter**: A standard GUI library for Python to create graphical user interfaces.
+2. **OpenCV (cv2)**: An open-source computer vision library used for real-time computer vision applications.
+3. **Firebase Admin SDK**: For integrating with Firebase services like Realtime Database and Cloud Storage.
+4. **NumPy**: A library for numerical operations.
+5. **PIL (Pillow)**: Python Imaging Library for image processing.
+6. **datetime**: To handle date and time operations.
+7. **sys**: To handle system-specific parameters and functions.
+8. **pickle**: To serialize and deserialize Python objects.
+
+### New User Registration
+The following process is executed when a new user registers:
+1.	The user provides personal details such as name, age, and gender through a Tkinter interface.
+2.	The system captures the user's face using a webcam. The face_recognition library processes the captured image, detecting the face and generating its unique encoding.
+3.	The generated face encoding is stored/updated in a pickle file named "Encodings.p" alongside the user's name. This file acts as a local database for face recognition.
+4.	The user's details (name, age, gender) and profile picture are stored in Firebase's Realtime Database and Cloud Storage, respectively.
+
+### Existing User Registration
+The following process is executed when an existing user registers:
+1.	The system captures the user's face from a webcam in real-time when the user presses ‘r’. The face_recognition library detects the face and generates its encoding.
+2.	The generated encoding is compared with the encodings stored in the "Encodings.p" file. The comparison uses a similarity metric to find the closest match.
+3.	The system identifies the user by selecting the name corresponding to the closest encoding match from the pickle file.
+4.	The user's details are retrieved from the Firebase Realtime Database and displayed in the recognition window.
+
+### Firebase Integration
+Firebase plays a crucial role in data storage and management:
+
+**Realtime Database**: Stores user details such as name, age, gender, date, and time of registration.
+
+**Cloud Storage**: Stores user profile pictures, ensuring secure and scalable image storage.
+
+
+	
+
 ## Notes
 1.	Due to poor network connectivity, the second window displaying “Marked. Loading your data” might not appear. Instead, the final details window might be shown directly.
 
